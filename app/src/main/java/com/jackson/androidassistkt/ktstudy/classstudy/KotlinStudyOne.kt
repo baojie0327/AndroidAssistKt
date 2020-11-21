@@ -1,4 +1,6 @@
-package com.jackson.androidassistkt.ktstudy
+package com.jackson.androidassistkt.ktstudy.classstudy
+
+import com.jackson.androidassistkt.ktstudy.classstudy.Student
 
 
 /*
@@ -55,5 +57,12 @@ class KotlinStudyOne {
     val fu_two=2.718f  // Float
 
     // kotlin中的数字没有隐式拓宽转换
+
+
+    val stu=
+        Student("Jackson", 26)
+
+
+
 
 }

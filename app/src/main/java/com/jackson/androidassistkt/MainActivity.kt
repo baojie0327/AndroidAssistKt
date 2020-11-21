@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.jackson.androidassistkt.databinding.ActivityMainBinding
+import com.jackson.androidassistkt.ktstudy.KotlinStudyMainActivity
 
 class MainActivity : AppCompatActivity() ,View.OnClickListener{
 
@@ -23,7 +24,8 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
         // 传入一个函数，参数为v，返回值为void，函数体放在{}
         binding.tvKtStudy.setOnClickListener{v:View?->{}}
 
-        binding.tvKtStudy.setOnClickListener { startActivity(Intent(this,KotlinStudyMainActivity::class.java)) }
+        binding.tvKtStudy.setOnClickListener { startActivity(Intent(this,
+            KotlinStudyMainActivity::class.java)) }
 
         binding.tvKtStudy.setOnClickListener(this)
 
@@ -31,7 +33,8 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
 
     override fun onClick(p0: View) {
         when(p0.id){
-            R.id.tv_kt_study->startActivity(Intent(this,KotlinStudyMainActivity::class.java))
+            R.id.tv_kt_study->startActivity(Intent(this,
+                KotlinStudyMainActivity::class.java))
         }
     }
 }

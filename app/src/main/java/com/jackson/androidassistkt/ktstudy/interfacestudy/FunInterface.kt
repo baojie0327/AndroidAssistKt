@@ -8,6 +8,6 @@ package com.jackson.androidassistkt.ktstudy.interfacestudy
  */
 fun interface FunInterface {
 
-    fun invoke(name:String):String
+    fun invoke(name:String,age:Int):String
 
 }
